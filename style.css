@@ -1,0 +1,131 @@
+/*******************************
+                        
+  PROJECT: Calories Count    
+  AUTHOR: Kevin Banza      
+                             
+********************************/
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'proxima-nova',Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"
+}
+body{
+	height: 100vh;
+	max-height: 100vh;
+}
+.wrapper{
+	height: 100vh;
+	width: 100%;
+	display: grid;
+	grid-template-rows: 10% 80% 10%;
+}
+header{
+	grid-row: 1/2;
+	display: grid;
+	grid-template-columns: 20% 60% 20%;
+	background-color: #ffa500; 
+	text-align: center;
+	color: #f1f1f1;
+}
+header>h3{
+	margin: auto;
+}
+header>button{
+	background-color: #ffa500;
+	border: 0px;
+	opacity: 0;
+	grid-row: 1/2;
+	height: 100%;
+}
+header>button>img{
+	max-height: 100%;
+}
+header>button.active{
+	opacity: 1;
+}
+main{
+	grid-row: 2/3;
+}
+section{
+	display: none;
+}
+section#HOME.active{
+	height: 100%;
+	display: grid;
+	grid-template-rows: 70% 30%;
+}
+footer{
+	grid-row: 3/4;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	background-color: #ffa500; 
+}
+footer>button{
+	border: 1px solid #fff;
+	background-color: #ffa500; 
+	color: #f1f1f1;
+}
+
+img{
+	margin: auto
+}
+
+section.list-page.active{
+	overflow-y: scroll;
+	padding: 5vmin 0px 0px 0px !important;
+	height: 100%;
+	display: grid;
+	grid-auto-rows: 10%;
+	grid-row-gap: 5vmin;
+}
+section.list-page.active>div{
+	height:100%;
+	width: 100%;
+}
+
+#HOME{
+	padding: 5%;
+}
+#add-btn{
+	grid-row: 1/2;
+	background-color: #fff;
+	border: 0px;
+	height: 100%;
+	max-width: 100%; 
+}
+#counter{
+	grid-row: 2/3;
+	margin: 5% 0px;
+	padding: 20px;
+	border: 2px solid #ffc04c;
+	text-align: center;
+	position: relative;
+	transform: translateX(-50%);
+	left: 50%;
+	display: inline-block;
+	height: 100%;
+}
+#counter>p{
+	font-weight: 700;
+	font-size: 3rem;
+	color: #ffF;
+	width: auto;    
+	position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#ADDFOOD{
+	padding: 50px 0px;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	grid-gap: 20px;
+	color: #1a1a1a;
+}
+
+section>div{
+	text-align: center;
+	padding: 5vmin 0px;
+	background: #ffd27f;
+
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calories Count</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Calories-count web app">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Kevin Banza">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/zmm1yvq.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts/calorie-handler.js" defer></script>
+    <script src="scripts/storage-handler.js" defer></script>
+    <script src="scripts/logic.js" defer></script>
+    <script src="scripts/storage.js" defer></script>
+    <script src="scripts/page-handler.js" defer></script>
+    <script src="scripts/navigation-script.js" defer></script>
+  </head>
+  
+  <body>
+    <div class="wrapper">
+      <header>
+        <button id="back-btn" class="">
+        <img src="assets/svg/Back-BTN.svg" alt="Back">
+        </button>
+        <h3>CALORIES COUNT</h3>
+      </header>
+      <main>
+        
+        <section id="HOME" class="active" title="Calories Count">
+          <img id="add-btn" src="assets/svg/Add-BTN.svg" alt="Add Calories">
+          <div id="counter"><p>ERROR</p></div>
+        </section>
+        
+        <section id="HELP" class="" title="HELP">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, dolor obcaecati, ea, nemo culpa repellendus hic reiciendis qui quam vitae modi. Ab, earum inventore blanditiis. Porro cumque exercitationem beatae dolor aperiam, enim voluptatem fugiat illo, voluptates nostrum provident tempore veniam eveniet maiores accusamus minus itaque! Veritatis eaque dolorum repellendus. Ut unde natus, atque eligendi voluptatibus quaerat consequatur perspiciatis beatae distinctio pariatur, dicta enim dignissimos officia vel illum rerum, odit nihil.</p>
+        </section>
+        
+        <section id="CONTACT" class="" title="CONTACT">
+          <form action="#">
+            <label for="name">Name : </label>
+            <input type="text" id="name" name="name" placeholder="Full Name"><br>
+            <label for="email">Email : </label>
+            <input type="email" id="email" name="email" placeholder="Email"><br>
+            <label for="subject">Subject : </label>
+            <input type="text" id="subject" name="subject" placeholder="Subject"><br>
+            <label for="msg">Message : </label>
+            <label for="msg">Message : </label>
+            <input type="text" id="msg" name="msg" placeholder="Message..."><br>
+          </form>
+        </section>
+        
+        <section class="list-page" id="ADDFOOD" title="ADD FOOD">
+          <div id="fruit-btn"><h3>FRUIT</h3></div>
+          <div id="bread-btn"><h3>BREAD</h3></div>
+          <div id="meat-btn"><h3>MEAT</h3></div>
+          <div id="sugar-btn"><h3>SUGAR</h3></div>
+          <div id="other-btn"><h3>OTHER</h3></div>
+        </section>
+        <section class="list-page" id="CALORIES" title="YOUR CALORIES">
+          <div id="calorie-list"></div>
+        </section>
+        <section class="list-page" id="FRUIT" title="FRUIT">
+          <div id="apple-btn"><h3>APPLE</h3></div>
+          <div id="banana-btn"><h3>BANANA</h3></div>
+          <div id="pear-btn"><h3>PEAR</h3></div>
+        </section>
+        <section class="list-page" id="BREAD" title="BREAD">
+          <div id="bagel-btn"><h3>BAGEL</h3></div>
+          <div id="biscuit-btn"><h3>BISCUIT</h3></div>
+          <div id="jaffa-btn"><h3>JAFFA CAKE</h3></div>
+        </section>
+        <section class="list-page" id="MEAT" title="MEAT">
+          <div id="beef-btn"><h3>BEEF</h3></div>
+          <div id="chicken-btn"><h3>CHICKEN</h3></div>
+          <div id="pork-btn"><h3>PORK</h3></div>
+        </section>
+        <section class="list-page" id="SUGAR" title="SUGAR">
+         
+        </section>
+        <section class="list-page" id="OTHER" title="OTHER">
+        
+        </section>
+        <section class="list-page" id="YOUR" title="TODAYS CALORIES">
+
+        </section>
+        <section class="" id="CUSTOMFOOD" title="ADD CUSTOM FOOD">
+          <form>
+            <label>Food Name:
+              <input type="text" name="foodName" id="foodName" placeholder="Cheese Sandwich">
+            </label>
+            <label>Food Calories:
+              <input type="text" name="foodCals" id="foodCals" placeholder="119">
+            </label>
+            <label>Food Category:
+              <select id="foodCategory">
+                <option value="fruit">FRUIT</option>
+                <option value="bread">BREAD</option>
+                <option value="meat">MEAT</option>
+                <option value="sugar">SUGAR</option>
+                <option value="other">OTHER</option>
+              </select>
+            </label>
+          </form>
+        </section>
+      </main>
+      <footer>
+        <button id="help-btn">HELP</button>
+        <button id="home-btn">HOME</button>
+        <button id="calories-btn">CALORIES</button>
+      </footer>
+    </div>
+  </body>
+</html>
